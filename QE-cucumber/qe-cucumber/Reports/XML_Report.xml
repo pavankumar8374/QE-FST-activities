@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="7.176" tests="3" skipped="0" failures="2" errors="0">
+<testcase classname="Login Test" name="Testing Login without Examples" time="0.835">
+<failure type="org.opentest4j.AssertionFailedError" message="expected: &lt;Welcome Back, Admin!&gt; but was: &lt;Welcome Back,Admin!&gt;">
+<![CDATA[org.opentest4j.AssertionFailedError: expected: <Welcome Back, Admin!> but was: <Welcome Back,Admin!>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at stepDefinations.Activity4Steps.msg(Activity4Steps.java:33)
+	at ✽.get the confirmation messsage  as "Welcome Back,Admin!"(classpath:features/Activity4.feature:7)
+]]>
+</failure>
+<system-out><![CDATA[
+Given the user is on the login page.........................................passed
+When the user enters "admin" and "password".................................passed
+And clicks the submit button................................................passed
+Then get the confirmation messsage  as "Welcome Back,Admin!"................failed
+]]></system-out>
+</testcase>
+<testcase classname="Login Test" name="Testing Login without Examples - #1.1" time="0.404">
+<system-out><![CDATA[
+Given the user is on the login page.........................................passed
+When the user enters "admin" and "password".................................passed
+And clicks the submit button................................................passed
+Then get the confirmation messsage  as "Welcome Back, Admin!"...............passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Test" name="Testing Login without Examples - #1.2" time="0.325">
+<failure type="org.opentest4j.AssertionFailedError" message="expected: &lt;A Simple Login Form!&gt; but was: &lt;Welcome Back, Admin!&gt;">
+<![CDATA[org.opentest4j.AssertionFailedError: expected: <A Simple Login Form!> but was: <Welcome Back, Admin!>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at stepDefinations.Activity4Steps.msg(Activity4Steps.java:33)
+	at ✽.get the confirmation messsage  as "Welcome Back, Admin!"(classpath:features/Activity5.feature:7)
+]]>
+</failure>
+<system-out><![CDATA[
+Given the user is on the login page.........................................passed
+When the user enters "admin1" and "password1"...............................passed
+And clicks the submit button................................................passed
+Then get the confirmation messsage  as "Welcome Back, Admin!"...............failed
+]]></system-out>
+</testcase>
+</testsuite>
